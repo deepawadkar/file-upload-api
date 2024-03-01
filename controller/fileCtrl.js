@@ -6,7 +6,7 @@ const uploadFile =async (req,res) => {
         res.status(StatusCodes.CREATED).json({ msg : 'upload file'})
     } catch (err) {
         res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({ status:false, msg : err})
-        
+      
     }
 }
 //read all files - get

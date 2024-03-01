@@ -9,7 +9,12 @@
 
 multer -> express middleware used to upload files 
 express-fileupload ->
+cors -> cross origin resource sharing
 
 
 ## 3. http-status codes
     npm i --save http-status-codes
+
+
+
+//cloudinary storage it is free

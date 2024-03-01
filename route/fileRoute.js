@@ -1,4 +1,4 @@
-// const { request } = require('express')
+const { request } = require('express')
 
 const fileRoute = require('express').Router()
 
@@ -6,12 +6,12 @@ const { uploadFile , readAllFiles , readSingleFile , deleteFile} =require('../co
 
 //path
 
-fileRoute.post(`upload`, uploadFile)
+fileRoute.post(`/upload`, uploadFile)
 
-fileRoute.get(`all`, readAllFiles)
+fileRoute.get(`/all`, readAllFiles)
 
-fileRoute.get(`single/id`, readSingleFile)
+fileRoute.get(`/single/:id`, readSingleFile)
 
-fileRoute.delete(`delete/:id`, deleteFile)
+fileRoute.delete(`/delete/:id`, deleteFile)
 
 module.exports = fileRoute

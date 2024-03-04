@@ -9,8 +9,11 @@ const connectDb = require ('./db/config')
 //port import
 const PORT = process.env.PORT
 
-//instance of express
+//instance of express   
 const app = express()
+
+//declear  document folder as static
+app.use(express.static('documents'))
 
 //bodyparser middleware for incoming data
 app.use(express.urlencoded({ extended: true}))

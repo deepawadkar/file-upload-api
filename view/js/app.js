@@ -2,7 +2,7 @@ let files = document.querySelector('#files')
 
 //read files
 const readFiles = async () => {
-    await fetch (`http://localhost:6767/api/file/all`, {
+    await fetch (`/api/file/all`, {
         method:'GET'
     }).then(res => res.json())
     .then(res => {

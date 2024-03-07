@@ -19,6 +19,6 @@ const fileConfig = multer ({
     limits:{
         fileSize: 10* 1024 * 1024 //10MB
     }
-}).single('myFile')
+}).single('myfile')
 
 module.exports =fileConfig

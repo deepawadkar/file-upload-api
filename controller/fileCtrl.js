@@ -5,8 +5,9 @@ const fs = require('fs')
 //upload File - post
 const uploadFile =async (req,res) => {
     try {
-        //to read file data -> req.file
-        let data = req.file
+        //to read file data -> req.files
+        //let data = req.file
+        let data = req.file      //if multipal files req.files
 
         // to validate file already exists or not
         let extFile = await File.findOne({ originalname: data.originalname})

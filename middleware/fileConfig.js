@@ -21,4 +21,7 @@ const fileConfig = multer ({
     }
 }).single('myfile')
 
+//.single('myfile') -> for single file
+//.array('myfile) -> for uploading multipal files
+
 module.exports =fileConfig

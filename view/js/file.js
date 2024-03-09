@@ -4,7 +4,7 @@ var formData = new FormData()
 document.getElementById("myfile").addEventListener("change", async (e) => {
     e.preventDefault()
     console.log('file', e.target.files[0])
-    formData.append("myfile", e.target.files[0])
+    formData.append("myfile", e.target.files[0]) // for uploading multipal files
 });
 
 //upload logic
